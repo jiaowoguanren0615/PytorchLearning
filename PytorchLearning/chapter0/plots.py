@@ -73,15 +73,16 @@ def figure2(x_train, y_train, b, w, color='k'):
 def figure3(x_train, y_train, b, w):
     fig, ax = figure2(x_train, y_train, b, w)
     
-    # First data point
+    # If you encounter an error when using the figure3 function, try adding the following two lines of code to the function
+    # b, w = b.item(), w.item()
     x0, y0 = x_train[0][0], y_train[0][0]
-    # First data point
+
     ax.scatter([x0], [y0], c='r')
-    # Vertical line showing error between point and prediction
+
     ax.plot([x0, x0], [b + w * x0, y0 - .03], c='r', linewidth=2, linestyle='--')
     ax.arrow(x0, y0 - .03, 0, .03, color='r', shape='full', lw=0, length_includes_head=True, head_width=.03)
     ax.arrow(x0, b + w * x0 + .05, 0, -.03, color='r', shape='full', lw=0, length_includes_head=True, head_width=.03)
-    # Annotations
+
     ax.annotate(r'$error_0$', xy=(.8, 1.5))
 
     fig.tight_layout()
