@@ -1,1 +1,1 @@
-This is the readme file for chapter0
+## If you encounter an error while using the figure3 function, simply release the comments in the figure3 function
