@@ -20,7 +20,7 @@ conda activate torch2
 
 
 
-## 3. Install PyTorch package ([(pytorch.org)](https://pytorch.org/))
+## 3. Install PyTorch package ([pytorch.org](https://pytorch.org/))
 
 ## 	(Recommend to install the GPU version)
 
